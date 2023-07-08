@@ -5,6 +5,19 @@ var galleryImages = document.querySelectorAll('.jl-thumb-img');
 var closeGallery = document.querySelectorAll('.jl-toggle-gallery');
 var btnNext = document.querySelector('.jl-item-next');
 var btnPrev = document.querySelector('.jl-item-prev');
+var currCounter = document.querySelector('.jl-current-slide');
+var totalCounter = document.querySelector('.jl-total-slide');
+
+//Counter Formater
+var counterFormatter = function (n) {
+    if (n < 10) {
+        return '0' + n;
+    } else {
+        return n;
+    }
+}
+
+totalCounter.innerHTML = counterFormatter(galleryImages.length);
 
 const getImageSrc = function () {
     for (var i = 0; i < galleryImages.length; i++) {
@@ -15,6 +28,8 @@ const getImageSrc = function () {
             frameImage.setAttribute('data-index', itemNum);
             overlay.classList.add('jl-is-open');
             frameContainer.classList.add('jl-is-open');
+
+            currCounter.innerHTML = counterFormatter(itemNum);
         });
     }
 }
@@ -26,6 +41,7 @@ for (var c = 0; c < closeGallery.length; c++) {
         frameContainer.classList.remove('jl-is-open');
     });
 }
+
 
 const nextItem = function () {
 
@@ -49,6 +65,8 @@ const nextItem = function () {
             //Passamos o data-src para a tag de img no frame
             frameImage.setAttribute('src', nextSrc);
             frameImage.setAttribute('data-index', nextIndex);
+
+            currCounter.innerHTML = counterFormatter(nextIndex);
         }
     }
 }
@@ -75,6 +93,8 @@ const prevItem = function () {
             //Passamos o data-src para a tag de img no frame
             frameImage.setAttribute('src', prevSrc);
             frameImage.setAttribute('data-index', prevIndex);
+
+            currCounter.innerHTML = counterFormatter(prevIndex);
         }
     }
 }
