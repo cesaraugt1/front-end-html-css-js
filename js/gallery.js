@@ -7,7 +7,7 @@ var btnNext = document.querySelector('.jl-item-next');
 var btnPrev = document.querySelector('.jl-item-prev');
 var currCounter = document.querySelector('.jl-current-slide');
 var totalCounter = document.querySelector('.jl-total-slide');
-var skeletonLoading = document.querySelector('.jl-skeleton-loading')
+var skeletonLoading = document.querySelector('.jl-skeleton-loading');
 
 //Counter Formater
 var counterFormatter = function (n) {
@@ -21,29 +21,28 @@ var counterFormatter = function (n) {
 totalCounter.innerHTML = counterFormatter(galleryImages.length);
 
 //Skeleton Loading
-const skeletonAnim = function (imagem){
+const skeletonAnim = function (imagem) {
     var myImage = new Image();
-            myImage.src = imagem;
-            myImage.addEventListener('load', function() {
-                skeletonLoading.classList.add ('jl-fade-out');
-                console.log('iniciou fadeout');
-                setTimeout(function(){
-                    skeletonLoading.style.display = 'none';
-                    console.log('iniciou display none');
-                }, 2000);
-            });
-
+    myImage.src = imagem;
+    myImage.addEventListener('load', function () {
+        skeletonLoading.classList.add('jl-fade-out');
+        console.log('iniciou fadeOut');
+        setTimeout(function () {
+            skeletonLoading.style.display = 'none';
+            console.log('iniciou display None');
+        }, 2000);
+    });
 }
 
-//Open Gallery Modal
 
+//Open Gallery Modal
 const getImageSrc = function () {
     for (var i = 0; i < galleryImages.length; i++) {
         galleryImages[i].addEventListener('click', function () {
             var imageSrc = this.getAttribute('data-src');
             var itemNum = this.getAttribute('data-item');
 
-            skeletonLoading.style.display= 'flex';
+            skeletonLoading.style.display = 'flex';
 
             frameImage.setAttribute('src', imageSrc);
             frameImage.setAttribute('data-index', itemNum);
@@ -51,7 +50,7 @@ const getImageSrc = function () {
             frameContainer.classList.add('jl-is-open');
             currCounter.innerHTML = counterFormatter(itemNum);
 
-            skeletonAnim(imageSrc);        
+            skeletonAnim(imageSrc);
         });
     }
 }
@@ -63,7 +62,6 @@ for (var c = 0; c < closeGallery.length; c++) {
         frameContainer.classList.remove('jl-is-open');
     });
 }
-
 
 const nextItem = function () {
 
@@ -79,12 +77,12 @@ const nextItem = function () {
         var item = galleryImages[n];
         var itemNum = parseInt(item.getAttribute('data-item'));
 
-        skeletonLoading.style.display= 'flex';
-
         if (itemNum === nextItemNum) {
             //Capturamos o data-src
             var nextSrc = item.getAttribute('data-src');
             var nextIndex = item.getAttribute('data-item');
+
+            skeletonLoading.style.display = 'flex';
 
             //Passamos o data-src para a tag de img no frame
             frameImage.setAttribute('src', nextSrc);
@@ -92,7 +90,8 @@ const nextItem = function () {
 
             currCounter.innerHTML = counterFormatter(nextIndex);
 
-            skeletonAnim(nextSrc); 
+            skeletonAnim(nextSrc);
+
         }
     }
 }
@@ -111,12 +110,12 @@ const prevItem = function () {
         var item = galleryImages[p];
         var itemNum = parseInt(item.getAttribute('data-item'));
 
-        skeletonLoading.style.display= 'flex';
-
         if (itemNum === prevItemNum) {
             //Capturamos o data-src
             var prevSrc = item.getAttribute('data-src');
             var prevIndex = item.getAttribute('data-item');
+
+            skeletonLoading.style.display = 'flex';
 
             //Passamos o data-src para a tag de img no frame
             frameImage.setAttribute('src', prevSrc);
