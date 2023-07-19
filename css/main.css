@@ -888,6 +888,10 @@ p, label {
         height: auto;
         position: relative;
     }
+
+    .jl-text-center-mob {
+    text-align: center;
+}
 }
 
 @media screen and (min-width: 576px){
@@ -914,6 +918,10 @@ p, label {
 
     .jl-title-large {
         font-size: 48px;
+    }
+
+    .jl-text-center-mob {
+        text-align: left;
     }
 }
 
