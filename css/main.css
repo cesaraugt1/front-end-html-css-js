@@ -773,7 +773,7 @@ p, label {
     }
 
     .jl-gallery-frame-container {
-        width: 400px;
+        width: 60%;
         display: none;
         position: fixed;
         top: 30px;
@@ -827,7 +827,7 @@ p, label {
 
     .jl-gallery-frame-container .jl-items-next-prev {
         width: 150px;
-        margin: 75px auto 0 auto;
+        margin: 45px auto 0 auto;
     }
 
     .jl-close-gallery {
@@ -867,10 +867,10 @@ p, label {
         max-width: 87%;
         margin: 0 auto;
         display: block;
-        border-radius: 30px;
+        border-radius: 22px;
         z-index: 1200;
         position: relative;
-        top: 20px;
+        top: 14px;
     }
 
 
@@ -892,6 +892,12 @@ p, label {
     .jl-text-center-mob {
     text-align: center;
 }
+}
+
+@media screen and (min-width: 360px) {
+    .jl-gallery-frame-container {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 576px){
@@ -1117,7 +1123,14 @@ p, label {
 
     .jl-project-description {
         margin-top: 0;
+    }
 
+    .jl-gallery-frame-container {
+        width: 320px;
+    }
+
+    .jl-gallery-frame-image {
+        top: 17px;
     }
 
      /* --- UTILITARIAS --- */
@@ -1173,6 +1186,10 @@ p, label {
        left: -75px;
    }
 
+   .jl-gallery-frame-container {
+       width: 340px;
+   }
+
    .jl-navigator-counter span{       
         font-size: 120px;
     }
@@ -1182,11 +1199,13 @@ p, label {
 }
 
 @media screen and (min-width: 1364px){
-    
+
 }
 
 @media screen and (min-width: 1600px){
-    
+    .jl-gallery-frame-container {
+       width: 400px;
+   }
 }
 
 /* BOTÕES */
