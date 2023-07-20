@@ -693,10 +693,30 @@ p, label {
 
     /*----SOBRE----*/
 
-    #jl-avatar-sobre img {
-        position: relative;
-        left: -15px;
+    .jl-section-sobre {
+        height: calc(100% - 130px);
     }
+
+    .jl-section-sobre .container-fluid, .jl-section-sobre .container-fluid > .row {
+        height: 100%;
+    }
+
+    .jl-avatar-sobre {
+        position: relative;
+    }
+
+     .jl-box-img {
+        position: absolute;
+        left: -15px;
+        bottom: 0;
+     }
+
+     .jl-titulo-sobre, .jl-info-sobre, .jl-premios-sobre {
+        width: 100%;
+        display: table;
+        float: left;
+        margin-bottom: 30px;
+     }
 
     /*----DETALHES----*/
     .jl-hero {
@@ -1133,6 +1153,23 @@ p, label {
         top: 17px;
     }
 
+    .jl-titulo-sobre {
+        width: 100%;
+     }
+
+    .jl-titulo-sobre h1{
+        font-size: 90px;
+    }
+    
+    .jl-info-sobre {
+        width: 55%;
+     }
+
+    .jl-premios-sobre {
+        width: 45%;
+        padding-left: 30px;
+     }
+
      /* --- UTILITARIAS --- */
 
      .jl-full-height {
@@ -1196,16 +1233,42 @@ p, label {
     .jl-navigator-counter:before {
        width: 35px; 
     }
+
+    .jl-titulo-sobre h1{
+        font-size: 120px;
+    }
 }
 
 @media screen and (min-width: 1364px){
 
 }
+@media screen and (min-width: 1500px) {
+
+    .jl-info-sobre {
+        width: 43%;
+     }
+
+    .jl-premios-sobre {
+        width: 31%;
+     }
+}
+
 
 @media screen and (min-width: 1600px){
     .jl-gallery-frame-container {
        width: 400px;
    }
+}
+
+@media screen and (min-width: 1740px) {
+
+    .jl-info-sobre {
+        width: 38%;
+    }
+
+    .jl-premios-sobre {
+        width: 31%;
+    }
 }
 
 /* BOTÕES */
