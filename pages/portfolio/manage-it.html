@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../../css/bootstrap-grid.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../css/main.css" />
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <title>Manage it App - João Lemon Designer</title>
 </head>
 
@@ -25,6 +27,7 @@
     </div>
 
     <div class="jl-overlay jl-toggle-gallery"></div>
+    <div class="jl-menu-overlay jl-toggle-menu"></div>
 
     <div class="jl-gallery-frame-container">
         <div class="jl-gallery-frame-inner">
@@ -70,6 +73,16 @@
             <a href="../sobre.html">Sobre</a>
         </nav>
     </header>
+
+    <button class="jl-btn-menu-mob jl-toggle-menu">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    
+    <nav class="jl-menu-mob jl-menu-is-closed">
+        <a href="#">Home</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/sobre.html">Sobre</a>
+    </nav>
 
     <div class="jl-contact-info jl-bg-black jl-text-light">
         <div class="jl-contact-info-inner">
@@ -213,6 +226,7 @@
             <section class="jl-post-section jl-post-gallery">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-6 col-sm-6 col-md-4 col-lg-3 jl-mar-bottom-30">
                             <img data-item="1" data-src="img/app-1.png" src="img/app-1-low.gif"
                                 alt="Tela do App Manage It 1" alt="Tela do App Manage It 1"
@@ -283,7 +297,6 @@
 
 
     </div>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.10.0/rellax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
@@ -293,7 +306,6 @@
 
     <script>
         AOS.init();
-        var rellax = new Rellax('.rellax');
 
         var galleryItem = document.querySelectorAll('.jl-post-gallery img');
         for (var i = 0; i < galleryItem.length; i++) {
