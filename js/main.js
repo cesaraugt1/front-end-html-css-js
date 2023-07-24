@@ -54,6 +54,19 @@ for (var i = 0; i < toggleModal.length; i++) {
     });
 }
 
+// Animando Elementos on Scroll com Waypoints
+    var triggerTopbar = document.querySelector('.jl-trigger-topbar');
+    var topbar = document.querySelector('.jl-topbar');
+    var logo = document.querySelector('.jl-logo');
+    var waypoint = new Waypoint({
+        element: triggerTopbar,
+            handler: function () {
+                topbar.classList.toggle('jl-topbar-bg')
+                logo.classList.toggle('jl-logo-shorten')
+            },
+        offset: '50px'
+    });
+
 
 
 
