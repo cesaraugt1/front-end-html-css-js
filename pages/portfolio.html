@@ -17,6 +17,10 @@
 </head>
 
 <body>
+    <div class="jl-trigger-topbar"></div>
+    <div class="border-top-left"></div>
+    <div class="border-bottom-right"></div>
+
     <div class="jl-preloader">
         <div class="jl-preloader-inner">
             <img src="../images/lemon-loader.svg" class="jl-mar-bottom-15" />
@@ -24,11 +28,10 @@
         </div>
     </div>
 
-    <div class="jl-overlay jl-toggle-modal"></div>
     <div class="jl-menu-overlay jl-toggle-menu"></div>
 
     <header class="jl-topbar">
-        <div class="jl-logo">
+        <div class="jl-logo jl-logo-big">
             <img src="../images/logo.svg" alt="Logo João Lemon UX/UI Designer" />
         </div>
 
@@ -39,14 +42,14 @@
         </nav>
     </header>
 
-   <button class="jl-btn-menu-mob jl-toggle-menu">
+    <button class="jl-btn-menu-mob jl-toggle-menu">
         <ion-icon name="menu"></ion-icon>
     </button>
 
     <nav class="jl-menu-mob jl-menu-is-closed">
-        <a href="../index.html">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="sobre.html">Sobre</a>
+        <a href="#">Home</a>
+        <a href="pages/portfolio.html">Portfolio</a>
+        <a href="pages/sobre.html">Sobre</a>
     </nav>
 
     <div class="jl-contact-info jl-bg-black jl-text-light">
@@ -72,7 +75,6 @@
     </div>
 
     <button class="jl-btn-contact">
-
 
     </button>
 
@@ -206,6 +208,8 @@
     </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+
     <script src="../js/main.js"></script>
 
     <script>
