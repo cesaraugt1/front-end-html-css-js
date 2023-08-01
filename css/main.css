@@ -527,7 +527,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
     .jl-scroll-down {
         width: 70px;
-        height: 105px;
+        height: 135px;
         border-radius: 35px 35px 0 0;
         background-color: #2CCB69;
         display: block;        
@@ -712,7 +712,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     text-align: center;
    }
 
-   .jl-slider-list .jl-portfolio-item-info button{
+   .jl-slider-list .jl-portfolio-item-info .jl-btn{
     margin: 0 auto;
    }
 
@@ -734,12 +734,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
     position: relative;
 }
 
-   .jl-slider-list .jl-portfolio-item-thumb > button{
+   .jl-slider-list .jl-portfolio-item-thumb > .jl-btn{
         margin: 17px auto 0 auto;
         float: none;
    }
 
-    .jl-portfolio-list .jl-portfolio-item-thumb > button {
+    .jl-portfolio-list .jl-portfolio-item-thumb > .jl-btn {
         margin: 17px auto 0 auto;
         float: none;
     }
@@ -789,7 +789,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
 
     
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button, .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info button{
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info .jl-btn, .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info .jl-btn{
         float: none;
         margin: 0 auto;
     }
@@ -1224,7 +1224,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         left: -75px;
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb > button{
+    .jl-slider-list .jl-portfolio-item-thumb > .jl-btn{
         margin: 17px 6.5% 0 0;
         float: right;
    }
@@ -1238,7 +1238,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         margin-top: 70px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button{
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info .jl-btn{
         float: right;
     }
 
@@ -1250,7 +1250,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         margin-left: 105px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info button{
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info .jl-btn{
         float: left;
     }
 
@@ -1275,12 +1275,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         left: -75px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb button{
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb .jl-btn{
         float: left;
         margin-left: 75px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb button{
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb .jl-btn{
         float: right;
         margin-right: 75px;
     }
@@ -1313,7 +1313,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         margin-top: 73px;
     }
 
-    .jl-slider-list .jl-portfolio-item-info button{
+    .jl-slider-list .jl-portfolio-item-info .jl-btn{
         margin: 0;
      }
 
@@ -1412,7 +1412,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', end
         left: -75px;
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb > button{
+    .jl-slider-list .jl-portfolio-item-thumb > .jl-btn{
         margin-right: 75px;
    }
 
